@@ -1,0 +1,13 @@
+input {
+  color: #000;
+  font-weight: 800;
+  border: none;
+  border-bottom: #00aeff solid 3px;
+  background: transparent;
+  width: 100%;
+  padding: 3px;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.01);
+}

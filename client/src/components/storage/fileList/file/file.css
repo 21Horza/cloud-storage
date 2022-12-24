@@ -1,0 +1,116 @@
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px #00eaff;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  cursor: pointer;
+}
+.file:hover {
+  transform: scale(1.02);
+}
+
+.fileIcon {
+  font-size: 34px;
+}
+
+.file__date {
+  grid-column-start: 5;
+  justify-self: center;
+}
+.file__size {
+  grid-column-start: 6;
+  justify-self: center;
+}
+.file__btn {
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+  border: none;
+  border-radius: 4px;
+}
+.file:hover .file__date {
+  grid-column-start: 3;
+}
+.file:hover .file__size {
+  grid-column-start: 4;
+}
+.file:hover .file__download {
+  grid-column-start: 5;
+  display: block;
+}
+.file:hover .file__delete {
+  grid-column-start: 6;
+  display: block;
+}
+.file-plate {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnsFile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.file__delete {
+  background-color: crimson;
+}
+
+.file__delete:hover {
+  background-color: red;
+}
+
+.file__download {
+  background-color: rgb(0, 161, 0);
+}
+
+.file__download:hover {
+  background-color: #1ebf02;
+}
+
+.btns {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.file-plate__download {
+  cursor: pointer;
+  background-color: #179800;
+  border-radius: 3px;
+  border: none;
+  padding: 4px 6px;
+}
+
+.file-plate__download:hover {
+  background-color: #1dbf00;
+}
+
+.file-plate__delete {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: crimson;
+  border-radius: 3px;
+  border: none;
+  padding: 4px 6px;
+}
+
+.file-plate__delete:hover {
+background-color: red;
+}
+
+.file-plate__img {
+  height: 100px;
+  width: 100px;
+}
+.file-plate__btns {
+  display: none;
+}
+.file-plate:hover .file-plate__btns {
+  display: flex;
+}
